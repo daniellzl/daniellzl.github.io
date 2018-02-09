@@ -1,0 +1,36 @@
+@import "variables";
+
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4,
+.uk-h5,
+.uk-h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $serif;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background-color: $background-color;
+    border-top: $section-border;
+    border-bottom: $section-border;
+}
+
+.uk-navbar-nav > li.uk-active > a {
+    color: $gold;
+}
+
+.uk-navbar-nav > li > a.uk-open,
+.uk-navbar-nav > li > a:focus,
+.uk-navbar-nav > li:hover > a {
+    color: $gold;
+}
+
+.uk-modal-dialog {
+    background-color: transparent;
+}

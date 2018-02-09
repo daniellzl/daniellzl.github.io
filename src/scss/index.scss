@@ -1,0 +1,108 @@
+@import "variables";
+@import "UIkit-edit";
+
+/* ========================================================================== */
+/* DANIEL'S CLASSES
+/* ========================================================================== */
+
+.letter-spacing {
+    letter-spacing: $letter-spacing;
+}
+
+.serif {
+    font-family: $serif !important;
+}
+
+.sans-serif {
+    font-family: $sans-serif !important;
+}
+
+.button-gold {
+    background-color: $gold;
+    color: $black !important;
+    font-family: $serif;
+    font-weight: normal !important;
+}
+
+.button-gold:hover {
+    background-color: $gold;
+    color: $white !important;
+}
+
+.width-expand {
+    width: 100%;
+}
+
+.text-container {
+    max-width: 500px;
+}
+
+/* ========================================================================== */
+/* PORTFOLIO
+/* ========================================================================== */
+
+.portfolio {
+    color: $black;
+    font-family: $sans-serif;
+
+    a {
+        color: $gold;
+        font-weight: bold;
+    }
+
+    p {
+        line-height: 2;
+    }
+
+    hr {
+        border: $section-border;
+    }
+
+    .header {
+        .profile-photo {
+            border: $image-border;
+        }
+    }
+
+    .past-projects {
+        .image {
+            border: $image-border;
+        }
+    }
+}
+
+/* ========================================================================== */
+/* MOBILE
+/* ========================================================================== */
+
+@media (max-width: 768px) {
+    .portfolio {
+        .header {
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h3 {
+                font-size: 1.25rem;
+            }
+        }
+
+        .about {
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .past-projects{
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .contact {
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

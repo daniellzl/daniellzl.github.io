@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Daniel Liang's Portfolio",
+  "main": "index.js",
+  "author": "Daniel Liang",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "gulp dev && gulp watch",
+    "prod": "gulp prod"
+  },
+  "dependencies": {
+    "uikit": "^3.0.0-beta.39"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^1.12.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8"
+  }
+}
