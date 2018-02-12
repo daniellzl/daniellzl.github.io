@@ -17,7 +17,7 @@
         <div class="uk-position-center">
             <div class="uk-container uk-text-center">
                 <div uk-scrollspy="cls: uk-animation-scale-up uk-transform-origin-top-center;">
-                    <img class="profile-photo uk-align-center" src="dist/img/profile-photo-041417.jpg" alt="Profile Photo">
+                    <img class="profile-photo uk-align-center" src="dist/img/profile-photo-092117.jpg" alt="Profile Photo">
                     <h1>Welcome. My name is Daniel Liang.</h1>
                     <h3 class="sans-serif">I am a software developer based in the San Francisco Bay Area.</h3>
                 </div>
@@ -41,9 +41,9 @@
             </div>
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
-                    <li><a href="mailto:mrdanielliang@gmail.com" uk-icon="icon: mail"></a></li>
-                    <li><a href="https://www.linkedin.com/in/mr-daniel-liang/" uk-icon="icon: linkedin"></a></li>
-                    <li><a href="https://github.com/daniellzl" uk-icon="icon: github-alt"></a></li>
+                    <li><a href="mailto:mrdanielliang@gmail.com" uk-icon="icon: mail; ratio: 1.25"></a></li>
+                    <li><a href="https://www.linkedin.com/in/mr-daniel-liang/" uk-icon="icon: linkedin; ratio: 1.25"></a></li>
+                    <li><a href="https://github.com/daniellzl" uk-icon="icon: github-alt; ratio: 1.25"></a></li>
                 </ul>
             </div>
         </nav>
@@ -53,10 +53,11 @@
             </div>
         </nav>
         <div id="mobile-nav" uk-modal>
-            <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-bold uk-text-center">
-                <h3 class="letter-spacing uk-text-uppercase sans-serif"><a href="#about" uk-scroll="offset: 80">About</a></h3>
-                <h3 class="letter-spacing uk-text-uppercase sans-serif"><a href="#past-projects" uk-scroll="offset: 80">Past Projects</a></h3>
-                <h3 class="letter-spacing uk-text-uppercase sans-serif"><a href="#contact" uk-scroll>Contact</a></h3>
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-bold uk-text-center">
+                <h3 class="letter-spacing uk-text-uppercase uk-text-bold sans-serif"><a href="#about" uk-scroll="offset: 80">About</a></h3>
+                <h3 class="letter-spacing uk-text-uppercase uk-text-bold sans-serif"><a href="#past-projects" uk-scroll="offset: 80">Past Projects</a></h3>
+                <h3 class="letter-spacing uk-text-uppercase uk-text-bold sans-serif"><a href="#contact" uk-scroll>Contact</a></h3>
                 <div class="uk-margin-medium-top">
                     <a href="mailto:mrdanielliang@gmail.com" uk-icon="icon: mail; ratio: 2.5"></a>
                     <a class="uk-margin-large-left uk-margin-large-right" href="https://www.linkedin.com/in/mr-daniel-liang/" uk-icon="icon: linkedin; ratio: 2.5"></a>
@@ -107,15 +108,20 @@
         <div class="uk-container">
             <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
                 <h2 class="letter-spacing">PAST PROJECTS</h2>
-                <p class="">For more projects, visit my <a href="#">Github</a></p>
+                <p class="">For more projects, visit my <a href="#">Github</a>.</p>
             </div>
             <div uk-grid>
                 <div class="uk-width-1-2@m">
-                    <div class="uk-inline-clip uk-transition-toggle width-expand" tabindex="0" uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
-                        <img class="image width-expand" alt="Dungeon Crawler" src="dist/img/Dungeon Crawler.png">
-                        <div class="uk-transition-scale-down uk-overlay uk-overlay-primary uk-position-cover">
-                            <div class="uk-position-large uk-position-center text-container">
-                                <h3>Dungeon Crawler</h3>
+
+
+                    <div class="uk-hidden@s">
+                        <div uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
+                            <a href="#dungeon-crawler-modal" uk-toggle><img class="image width-expand" alt="Dungeon Crawler" src="dist/img/Dungeon Crawler.png"></a>
+                        </div>
+                        <div id="dungeon-crawler-modal" uk-modal>
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                <h3 class="uk-modal-title">Dungeon Crawler</h3>
                                 <p>Roguelike dungeon crawler where player must find 3 key pieces, ascend the stairway, fight the boss!</p>
                                 <p>Built with React.js and Babel.</p>
                                 <a class="uk-button button-gold uk-margin-right"  href="https://dungeon-crawler-dlzl.surge.sh/">Visit Site</a>
@@ -123,13 +129,35 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <div class="uk-visible@s">
+                        <div class="uk-inline-clip uk-transition-toggle width-expand" tabindex="0" uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
+                            <img class="image width-expand" alt="Dungeon Crawler" src="dist/img/Dungeon Crawler.png">
+                            <div class="uk-transition-scale-down uk-overlay uk-overlay-primary uk-position-cover">
+                                <div class="uk-position-large uk-position-center text-container">
+                                    <h3>Dungeon Crawler</h3>
+                                    <p>Roguelike dungeon crawler where player must find 3 key pieces, ascend the stairway, fight the boss!</p>
+                                    <p>Built with React.js and Babel.</p>
+                                    <a class="uk-button button-gold uk-margin-right"  href="https://dungeon-crawler-dlzl.surge.sh/">Visit Site</a>
+                                    <a class="uk-button button-gold"  href="https://github.com/daniellzl/dungeon-crawler">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div class="uk-width-1-2@m">
-                    <div class="uk-inline-clip uk-transition-toggle width-expand" tabindex="0" uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
-                        <img class="image width-expand" alt="Let's Vote" src="dist/img/Let's Vote.png">
-                        <div class="uk-transition-scale-down uk-overlay uk-overlay-primary uk-position-cover">
-                            <div class="uk-position-large uk-position-center text-container">
-                                <h3>Let's Vote</h3>
+
+                    <div class="uk-hidden@s">
+                        <div uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
+                            <a href="#lets-vote-modal" uk-toggle><img class="image width-expand" alt="Let's Vote" src="dist/img/Let's Vote.png"></a>
+                        </div>
+                        <div id="lets-vote-modal" uk-modal>
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                <h3 class="uk-modal-title">Let's Vote</h3>
                                 <p>Vote in user-created polls. Facebook users can access dashboard to view, edit, and delete their own polls. All users can see the current state of a poll in a pie chart.</p>
                                 <p>Built with Express.js, MongoDB, and Passport.</p>
                                 <a class="uk-button button-gold uk-margin-right" href="https://voting-app-dlzl.herokuapp.com/">Visit Site</a>
@@ -137,13 +165,34 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="uk-visible@s">
+                        <div class="uk-inline-clip uk-transition-toggle width-expand" tabindex="0" uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
+                            <img class="image width-expand" alt="Let's Vote" src="dist/img/Let's Vote.png">
+                            <div class="uk-transition-scale-down uk-overlay uk-overlay-primary uk-position-cover">
+                                <div class="uk-position-large uk-position-center text-container">
+                                    <h3>Let's Vote</h3>
+                                    <p>Vote in user-created polls. Facebook users can access dashboard to view, edit, and delete their own polls. All users can see the current state of a poll in a pie chart.</p>
+                                    <p>Built with Express.js, MongoDB, and Passport.</p>
+                                    <a class="uk-button button-gold uk-margin-right" href="https://voting-app-dlzl.herokuapp.com/">Visit Site</a>
+                                    <a class="uk-button button-gold" href="https://github.com/daniellzl/voting-application">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="uk-width-1-2@m">
-                    <div class="uk-inline-clip uk-transition-toggle width-expand" tabindex="0" uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
-                        <img class="image width-expand" alt="Simon Game" src="dist/img/Simon Game.png">
-                        <div class="uk-transition-scale-down uk-overlay uk-overlay-primary uk-position-cover">
-                            <div class="uk-position-large uk-position-center text-container">
-                                <h3>Simon Game</h3>
+
+
+                    <div class="uk-hidden@s">
+                        <div uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
+                            <a href="#simon-game-modal" uk-toggle><img class="image width-expand" alt="Simon Game" src="dist/img/Simon Game.png"></a>
+                        </div>
+                        <div id="simon-game-modal" uk-modal>
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                <h3 class="uk-modal-title">Simon Game</h3>
                                 <p>Match the color pattern in this game of Simon says.</p>
                                 <p>Built with Bootstrap and jQuery.</p>
                                 <a class="uk-button button-gold uk-margin-right" href="https://simon-game-dlzl.surge.sh/">Visit Site</a>
@@ -151,13 +200,33 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="uk-visible@s">
+                        <div class="uk-inline-clip uk-transition-toggle width-expand" tabindex="0" uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
+                            <img class="image width-expand" alt="Simon Game" src="dist/img/Simon Game.png">
+                            <div class="uk-transition-scale-down uk-overlay uk-overlay-primary uk-position-cover">
+                                <div class="uk-position-large uk-position-center text-container">
+                                    <h3>Simon Game</h3>
+                                    <p>Match the color pattern in this game of Simon says.</p>
+                                    <p>Built with Bootstrap and jQuery.</p>
+                                    <a class="uk-button button-gold uk-margin-right" href="https://simon-game-dlzl.surge.sh/">Visit Site</a>
+                                    <a class="uk-button button-gold" href="https://github.com/daniellzl/simon-game">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="uk-width-1-2@m">
-                    <div class="uk-inline-clip uk-transition-toggle width-expand" tabindex="0" uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
-                        <img class="image width-expand" alt="Conway's Game of Life" src="dist/img/Game of Life.png">
-                        <div class="uk-transition-scale-down uk-overlay uk-overlay-primary uk-position-cover">
-                            <div class="uk-position-large uk-position-center text-container">
-                                <h3>Conway's Game of Life</h3>
+
+                    <div class="uk-hidden@s">
+                        <div uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
+                            <a href="#game-of-life-modal" uk-toggle><img class="image width-expand" alt="Conway's Game of Life" src="dist/img/Game of Life.png"></a>
+                        </div>
+                        <div id="game-of-life-modal" uk-modal>
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                <h3 class="uk-modal-title">Conway's Game of Life</h3>
                                 <p>Play the game of life with the given initial state or define your own.</p>
                                 <p>Built with React.js and Babel.</p>
                                 <a class="uk-button button-gold uk-margin-right" href="https://game-of-life-dlzl.surge.sh/">Visit Site</a>
@@ -165,13 +234,34 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="uk-visible@s">
+                        <div class="uk-inline-clip uk-transition-toggle width-expand" tabindex="0" uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
+                            <img class="image width-expand" alt="Conway's Game of Life" src="dist/img/Game of Life.png">
+                            <div class="uk-transition-scale-down uk-overlay uk-overlay-primary uk-position-cover">
+                                <div class="uk-position-large uk-position-center text-container">
+                                    <h3>Conway's Game of Life</h3>
+                                    <p>Play the game of life with the given initial state or define your own.</p>
+                                    <p>Built with React.js and Babel.</p>
+                                    <a class="uk-button button-gold uk-margin-right" href="https://game-of-life-dlzl.surge.sh/">Visit Site</a>
+                                    <a class="uk-button button-gold" href="https://github.com/daniellzl/game-of-life">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="uk-width-1-2@m">
-                    <div class="uk-inline-clip uk-transition-toggle width-expand" tabindex="0" uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
-                        <img class="image width-expand" alt="Plans for Tonight" src="dist/img/Plans for Tonight.png">
-                        <div class="uk-transition-scale-down uk-overlay uk-overlay-primary uk-position-cover">
-                            <div class="uk-position-large uk-position-center text-container">
-                                <h3>Plans for Tonight</h3>
+
+
+                    <div class="uk-hidden@s">
+                        <div uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
+                            <a href="#plans-for-tonight-modal" uk-toggle><img class="image width-expand" alt="Plans for Tonight" src="dist/img/Plans for Tonight.png"></a>
+                        </div>
+                        <div id="plans-for-tonight-modal" uk-modal>
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                <h3 class="uk-modal-title">Plans for Tonight</h3>
                                 <p>Search for night life venues based on a location. The user can then log in through Facebook and indicated whether the user is attending a specific venue for the evening.</p>
                                 <p>Built with Express.js, Facebook OAuth, MongoDB, and Yelp API.</p>
                                 <a class="uk-button button-gold uk-margin-right" href="https://night-life-dlzl.herokuapp.com/">Visit Site</a>
@@ -179,13 +269,33 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="uk-visible@s">
+                        <div class="uk-inline-clip uk-transition-toggle width-expand" tabindex="0" uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
+                            <img class="image width-expand" alt="Plans for Tonight" src="dist/img/Plans for Tonight.png">
+                            <div class="uk-transition-scale-down uk-overlay uk-overlay-primary uk-position-cover">
+                                <div class="uk-position-large uk-position-center text-container">
+                                    <h3>Plans for Tonight</h3>
+                                    <p>Search for night life venues based on a location. The user can then log in through Facebook and indicated whether the user is attending a specific venue for the evening.</p>
+                                    <p>Built with Express.js, Facebook OAuth, MongoDB, and Yelp API.</p>
+                                    <a class="uk-button button-gold uk-margin-right" href="https://night-life-dlzl.herokuapp.com/">Visit Site</a>
+                                    <a class="uk-button button-gold" href="https://github.com/daniellzl/night-life-application">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="uk-width-1-2@m">
-                    <div class="uk-inline-clip uk-transition-toggle width-expand" tabindex="0" uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
-                        <img class="image width-expand" alt="Tic Tac Toe" src="dist/img/Tic Tac Toe.png">
-                        <div class="uk-transition-scale-down uk-overlay uk-overlay-primary uk-position-cover">
-                            <div class="uk-position-large uk-position-center text-container">
-                                <h3>Tic Tac Toe</h3>
+
+                    <div class="uk-hidden@s">
+                        <div uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
+                            <a href="#tic-tac-toe-modal" uk-toggle><img class="image width-expand" alt="Tic Tac Toe" src="dist/img/Tic Tac Toe.png"></a>
+                        </div>
+                        <div id="tic-tac-toe-modal" uk-modal>
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                <h3 class="uk-modal-title">Tic Tac Toe</h3>
                                 <p>Play tic-tac-toe against the computer.</p>
                                 <p>Built with Bootstrap and jQuery.</p>
                                 <a class="uk-button button-gold uk-margin-right" href="https://tic-tac-toe-dlzl.surge.sh/">Visit Site</a>
@@ -193,6 +303,22 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="uk-visible@s">
+                        <div class="uk-inline-clip uk-transition-toggle width-expand" tabindex="0" uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
+                            <img class="image width-expand" alt="Tic Tac Toe" src="dist/img/Tic Tac Toe.png">
+                            <div class="uk-transition-scale-down uk-overlay uk-overlay-primary uk-position-cover">
+                                <div class="uk-position-large uk-position-center text-container">
+                                    <h3>Tic Tac Toe</h3>
+                                    <p>Play tic-tac-toe against the computer.</p>
+                                    <p>Built with Bootstrap and jQuery.</p>
+                                    <a class="uk-button button-gold uk-margin-right" href="https://tic-tac-toe-dlzl.surge.sh/">Visit Site</a>
+                                    <a class="uk-button button-gold" href="https://github.com/daniellzl/tic-tac-toe">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -203,7 +329,7 @@
     <footer id="contact" class="uk-section contact">
         <div class="uk-container uk-text-center" uk-scrollspy="cls: uk-animation-scale-up uk-transform-origin-bottom-center; ">
             <h3 class="sans-serif">If you'd like to talk, a simple <a href="mailto:mrdanielliang@gmail.com">email</a> is best.</h3>
-            <h3 class="sans-serif">Thank you for visiting. Have a nice day!</h3>
+            <h3 class="sans-serif">Thank you for visiting. Have a nice day.</h3>
         </div>
     </footer>
 

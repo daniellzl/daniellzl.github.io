@@ -5,6 +5,10 @@
 /* DANIEL'S CLASSES
 /* ========================================================================== */
 
+.white-text {
+    color: $white;
+}
+
 .letter-spacing {
     letter-spacing: $letter-spacing;
 }
@@ -42,12 +46,12 @@
 /* ========================================================================== */
 
 .portfolio {
+    background-color: $background-color;
     color: $black;
     font-family: $sans-serif;
 
     a {
         color: $gold;
-        font-weight: bold;
     }
 
     p {
@@ -61,12 +65,25 @@
     .header {
         .profile-photo {
             border: $image-border;
+            max-width: 400px;
         }
     }
 
     .past-projects {
         .image {
             border: $image-border;
+        }
+    }
+
+    .uk-modal-dialog {
+        color: $white;
+
+        a {
+            text-decoration: none;
+        }
+
+        .uk-modal-title {
+            color: $white;
         }
     }
 }
@@ -85,6 +102,10 @@
             h3 {
                 font-size: 1.25rem;
             }
+
+            .profile-photo {
+                max-width: 70%;
+            }
         }
 
         .about {
@@ -93,7 +114,7 @@
             }
         }
 
-        .past-projects{
+        .past-projects {
             h2 {
                 font-size: 1.5rem;
             }

@@ -135,10 +135,12 @@ gulp.task('prod', [
 
 gulp.task('dev', [
     'bundle styles - development',
-    'bundle scripts - development'
+    'bundle scripts - development',
+    'minify html'
 ]);
 
 gulp.task('watch', () => {
+    gulp.watch(['src/*.html'], ['minify html']);
     gulp.watch(['src/scss/*.scss', 'src/scss/**/*.scss', 'src/scss/**/**/*.scss', 'src/styles.js'], ['bundle styles - development']);
     gulp.watch(['src/js/*.js', 'src/scripts.js'], ['bundle scripts - development']);
 });
