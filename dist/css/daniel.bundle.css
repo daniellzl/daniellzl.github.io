@@ -76,10 +76,10 @@ h6 {
   .portfolio hr {
     border: 0.5px solid #bbb; }
   .portfolio .header .profile-photo {
-    border: 2px solid #000;
-    max-width: 400px; }
+    border: 1px solid #000;
+    max-width: 300px; }
   .portfolio .past-projects .image {
-    border: 2px solid #000; }
+    border: 1px solid #000; }
   .portfolio .uk-modal-dialog {
     color: #fff; }
     .portfolio .uk-modal-dialog a {
