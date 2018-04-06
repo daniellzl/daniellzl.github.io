@@ -16,11 +16,9 @@
     <header class="uk-height-viewport header">
         <div class="uk-position-center">
             <div class="uk-container uk-text-center">
-                <div uk-scrollspy="cls: uk-animation-scale-up uk-transform-origin-top-center;">
-                    <img class="profile-photo uk-align-center" src="dist/img/profile-photo-092117.jpg" alt="Profile Photo">
-                    <h1>Welcome. My name is Daniel Liang.</h1>
-                    <h3 class="sans-serif">I am a software developer based in the San Francisco Bay Area.</h3>
-                </div>
+                <img class="profile-photo uk-align-center" src="dist/img/profile-photo-092117.jpg" alt="Profile Photo">
+                <h1>Welcome. My name is Daniel Liang.</h1>
+                <h3 class="sans-serif">I am a software engineer based in the San Francisco Bay Area.</h3>
             </div>
         </div>
         <div class="uk-position-bottom-center">
@@ -31,7 +29,7 @@
     </header>
 
     <section class="navbar" uk-sticky>
-        <nav class="uk-navbar-container uk-navbar uk-visible@s" uk-navbar uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
+        <nav class="uk-navbar-container uk-navbar uk-visible@s" uk-navbar>
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav uk-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 80;">
                     <li class="uk-active"><a href="#about">About</a></li>
@@ -47,7 +45,7 @@
                 </ul>
             </div>
         </nav>
-        <nav class="uk-navbar uk-navbar-container uk-hidden@s" uk-navbar uk-scrollspy="cls: uk-animation-slide-bottom-medium;">
+        <nav class="uk-navbar uk-navbar-container uk-hidden@s" uk-navbar>
             <div class="uk-navbar-center">
                 <a class="uk-navbar-toggle" href="#" uk-toggle="target: #mobile-nav"><span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
             </div>
